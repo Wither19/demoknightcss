@@ -1,0 +1,155 @@
+  @import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+  scripture {
+    font-family: 'PT Serif';
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 100%;
+  }
+  verse {
+    font-family: 'PT Serif';
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin: 10px auto 10px auto;
+  }
+  float {
+    animation: float 6s linear infinite;
+    display: block;
+  }
+  @keyframes float {
+        0% {
+            transform: translate(0px, 0px);
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
+        }
+        10% {
+            transform: translate(0px, -2px);
+            filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
+        }
+        20% {
+            transform: translate(0px, -4px);
+            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
+        }
+        30% {
+            transform: translate(0px, -6px);
+            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
+        }
+        40% {
+            transform: translate(0px, -8px);
+            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
+        }
+        50% {
+            transform: translate(0px, -10px);
+            filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 20px 8px gray);
+        }
+        60% {
+            transform: translate(0px, -8px);
+            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
+        }
+        70% {
+            transform: translate(0px, -6px);
+            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
+        }
+        80% {
+            transform: translate(0px, -4px);
+            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
+        }
+        90% {
+            transform: translate(0px, -2px);
+            filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
+        }
+        100% {
+            transform: translate(0px, 0px);
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
+        }
+    }
+        vocab {
+            color: lime;
+            text-decoration:underline;
+            font-size:1.05rem;
+            transition: all 200ms;
+    }
+        vocab:hover {
+            color: white;
+            background-color: green;
+            font-size: 1.1rem;
+            padding: 5px;
+        }
+        nsmbu {
+         color: gold;
+         background-color: #FFF5EE;
+         width: 15%;
+         padding: 45px 20px 45px 20px;
+         border-radius: 20px;
+         text-align: center;
+         font-size: 48px;
+         font-family: 'New Super Mario Font U', sans-serif;
+         border: 1px solid ghostwhite;
+         letter-spacing: 2px;
+         box-shadow: -5px -5px 5px lightblue inset, 5px -5px 5px lightblue inset, -5px -8px 8px lightblue inset, 5px -8px 8px lightblue inset;
+         filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.5));
+         transition: 70ms ease-out;
+        margin: 20px auto 20px auto;
+        cursor: pointer;
+        user-select: none;
+        display: block;
+        }
+        nsmbu:hover {
+        transform: translate(0px, 2px) scale(1.1);
+        }
+        nsmbu:active {
+        transform: translate(0px, -6px);
+        transition: 150ms cubic-bezier(0, 0.57, 1, 1);
+        }
+        nsmbu number {
+            color: #6495ED;
+            font-size: 60px;
+            font-family: 'New Super Mario Font U', sans-serif;
+            position: relative;
+            top: -55px;
+            left: -180px;
+        }
+        nsmbu-save new {
+        position: relative;
+           top:-5px;
+           left: 16px;
+        }
+        sadx {
+            background-color: rgba(0, 171, 255, 0.5);
+            border: 1px solid rgba(0, 171, 255, 0.5);
+            border-radius: 5px;
+            width: 25%;
+            margin: 20px auto 20px auto;
+            font-size: 30px;
+            filter: drop-shadow(2px);
+        }
+        sadx-select {
+            border-width: 4px; 
+            border-style: solid; 
+            background-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,171,255,1) 100%);
+            border-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,171,255,1) 100%) 1;
+            font-family: sans-serif;
+            color: white;
+            text-align:center;
+            width: 80%;
+            margin: 16px auto 16px auto;
+            cursor: pointer;
+        }
+        sadx-select:hover {
+            animation: sadx-outline 2s linear infinite;
+        }
+        @keyframes sadx-outline {
+            0% {
+                border: solid 4px orange;
+            }
+            50% {
+                border: solid 4px gold;
+            }
+            100% {
+                border: solid 4px orange;
+            }
+        }
