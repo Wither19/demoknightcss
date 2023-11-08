@@ -126,6 +126,8 @@
             margin: 20px auto 20px auto;
             font-size: 30px;
             filter: drop-shadow(2px);
+            margin: 10px auto 10px auto;
+            display: block;
         }
         sadx-select {
             border-width: 4px; 
@@ -138,6 +140,7 @@
             width: 80%;
             margin: 16px auto 16px auto;
             cursor: pointer;
+            display: block;
         }
         sadx-select:hover {
             animation: sadx-outline 2s linear infinite;
