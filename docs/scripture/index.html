@@ -1,1 +1,35 @@
-f
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+  <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/style.css">
+  <style>
+    body > * {
+      text-align: center;
+    }
+    p {
+      line-height: 200%;
+    }
+    sup {
+      letter-spacing: 4px;
+    }
+    pre {
+      background-color: #0b0529;
+      color: antiquewhite;
+      font-size: 12px;
+      border: 1px solid #0b0529;
+      border-radius: 16px;
+      line-height: 175%;
+    }
+  </style>
+</head>
+<body>
+  <float><h1>Scripture</h1></float>
+  <p>Used to cite from the Bible. Changes the contents inside to PT Serif and centers it (As a recommendation, use superscript for the numbers of the verses)<br><br>Use &ltverse&gt for dictating where the verse is found in the Bible, nested in &ltscripture&gt</p><br>
+  <float><h2>Usage</h2></float>
+  <pre class="line-numbers"><code>&ltscripture&gt&ltsup&gt8&lt/sup&gtSee to it that no one takes you captive through hollow<br> and deceptive philosophy, which depends on human tradition and the elemental <br>spiritual forces of this world rather than on Christ.
+  &ltverse&gtColossians 2:8 NIV&lt/verse&gt&lt/scripture&gt</code></pre><br>
+  <float><h2>Result</h2></float>
+  <scripture><sup>8</sup>See to it that no one takes you captive through hollow and deceptive philosophy, which depends on human tradition and the elemental spiritual forces of this world rather than on Christ.<verse>Colossians 2:8 NIV</verse></scripture>
+</body>
+</html>
