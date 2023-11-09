@@ -1,0 +1,40 @@
+    body > * {
+      text-align: center;
+    }
+    p {
+      line-height: 200%;
+    }
+    sup {
+      letter-spacing: 4px;
+    }
+    pre {
+      background-color: #0b0529;
+      color: antiquewhite;
+      font-size: 12px;
+      border: 1px solid #0b0529;
+      border-radius: 16px;
+      line-height: 175%;
+      width: 45%;
+      margin: 10px auto 10px auto;
+    }
+    .nav {
+      background-color: #0b0529;
+      color: antiquewhite;
+      font-size: 12px;
+      border: 1px solid #0b0529;
+      padding: 12px;
+      line-height: 175%;
+      width: 100%;
+      overflow: hidden;
+      margin: 10px auto 10px auto;
+    }
+    .nav a {
+      color: lime;
+      text-decoration: none;
+      float: left;
+      font-size: 24px;
+      padding: 12px 17%;
+    }
+    .nav a:hover {
+      color: forestgreen;
+    }
