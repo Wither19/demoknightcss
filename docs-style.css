@@ -58,19 +58,16 @@
         0% {
             font-family: PT Serif;
         }
-        20% {
+        25% {
             font-family: Merriweather;
         }
-        40% {
+        50% {
             font-family: Oswald; 
         }
-        60% {
+        75% {
             font-family: New Super Mario Font U;
         }
-        80% {
-            font-family: TF2 Build;
-        }
         100% {
-            font-family: PT Serif;
+            font-family: TF2 Build;
         }
     }
