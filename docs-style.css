@@ -23,6 +23,14 @@
       width: 45%;
       margin: 10px auto 10px auto;
     }
+    input#copy {
+      background-color: #0b0529;
+      color: antiquewhite;
+      text-align: center; 
+      margin: 10px auto 10px auto; 
+      padding: 6px 59px; 
+      width: 80%;
+    }
     .nav {
       background-color: #0b0529;
       color: antiquewhite;
