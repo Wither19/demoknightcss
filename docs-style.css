@@ -51,3 +51,26 @@
     .nav a:hover {
       color: forestgreen;
     }
+    #fontsthing {
+        animation: fontcycle 9s linear infinite;
+    }
+    @keyframes fontcycle {
+        0% {
+            font-family: PT Serif;
+        }
+        20% {
+            font-family: Merriweather;
+        }
+        40% {
+            font-family: Oswald; 
+        }
+        60% {
+            font-family: New Super Mario Font U;
+        }
+        80% {
+            font-family: TF2 Build;
+        }
+        100% {
+            font-family: PT Serif;
+        }
+    }
