@@ -30,9 +30,12 @@
       margin: 10px auto 10px auto; 
       width: 90%;
     }
+    a:visited {
+      color: blue;
+    }
     .nav {
       background-color: #0b0529;
-      color: antiquewhite;
+      color: antiquewhite !important;
       font-size: 12px;
       border: 1px solid #0b0529;
       padding: 12px;
@@ -42,7 +45,7 @@
       margin: 10px auto 10px auto;
     }
     .nav a {
-    color: lime;
+    color: lime !important;
     text-decoration: none;
     float: left;
     font-size: 24px;
