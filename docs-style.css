@@ -20,7 +20,7 @@
       border: 1px solid #0b0529;
       border-radius: 16px;
       line-height: 175%;
-      width: 45%;
+      width: auto;
       margin: 10px auto 10px auto;
     }
     input#copy {
