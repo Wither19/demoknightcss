@@ -1,4 +1,5 @@
-<html><head><title>The Vocabulary Tag</title>
+
+<html><head><title>3D Buttons</title>
 
     <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/style.css">
   <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/docs-style.css">
@@ -17,24 +18,38 @@
 <body>
   <div class="nav"><a href="https://wither19.github.io/demoknightcss/">Back</a><a href="https://wither19.github.io/landing">Landing Page</a></div>
   <float><h1>3D Buttons</h1></float>
-  <p>Use the attribute "data-btn-type" on divs or block elements to get this premade 3D-looking button partially inspired by Gimkit's GUI. Here is a list of colors available for buttons. <br><b><em>In addition, "data-btn-fade" allows you to set changes to the button's color on click, using the same color values as "data-btn-type".</em></b></p>
+  <p>Use the attribute <b>"data-btn-type"</b> on divs or block elements to get this premade 3D-looking button partially inspired by Gimkit's GUI. <br><b>"data-btn-fade"</b> sets a color transition on clicking the button. <br><b>"data-btn-smooth"</b> is a boolean value for enabling/disabling smooth color transitions (It is true by default). <br>Below is a list of colors and options available for the 3D buttons.</p>
   <br><float><h1>3D Button Syntax</h1></float>
   <center><table>
     <tr>
-      <th>Color</th>
+      <th>Code</th>
+      <th>Result</th>
       <th>Preview</th>
     </tr>
     <tr>
+      <td>&ltdiv data-btn-type="purple"&gt</td>
       <td>Purple</td>
-      <td><div data-btn-type="purple">Purple</div></td>
+      <td><div data-btn-type="purple">button</div></td>
     </tr>
     <tr>
+      <td>&ltdiv data-btn-type="gold"&gt</td>
       <td>Gold</td>
-      <td><div data-btn-type="gold">Gold</div></td>
+      <td><div data-btn-type="gold">button</div></td>
     </tr>
     <tr>
+      <td>&ltdiv data-btn-type="cyan"&gt</td>
       <td>Cyan</td>
-      <td><div data-btn-type="cyan">Cyan</div></td>
+      <td><div data-btn-type="cyan">button</div></td>
+    </tr>
+    <tr>
+      <td style="font-size: 20px;">&ltdiv data-btn-type="purple" data-btn-fade="cyan"&gt</td>
+      <td>Purple > Cyan</td>
+      <td><div data-btn-type="purple" data-btn-fade="cyan">button</div></td>
+    </tr>
+    <tr>
+      <td>&ltdiv data-btn-type="gold" data-btn-fade="gold" data-btn-smooth="true"&gt</td>
+      <td>Gold > Purple (Instant color transitions)</td>
+      <td><div data-btn-type="gold" data-btn-fade="purple" data-btn-smooth="false">Button</td>
     </tr>
   </table></center>
 </body></html>
