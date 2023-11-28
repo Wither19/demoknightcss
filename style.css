@@ -177,6 +177,7 @@
     filter: drop-shadow(0px 20px 12px gray);
     cursor: pointer;
     user-select: none;
+    text-align: center;
   }
       div[data-btn-type="1"]:hover {
     box-shadow: 0px 16px darkslateblue;
@@ -200,6 +201,7 @@
     filter: drop-shadow(0px 20px 12px gray);
     cursor: pointer;
     user-select: none;
+    text-align: center;
     }
      div[data-btn-type="2"]:hover {
     box-shadow: 0px 16px #b09502;
