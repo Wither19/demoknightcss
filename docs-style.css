@@ -75,3 +75,6 @@
             font-family: TF2 Build;
         }
     }
+    li.nav-item {
+    padding: 0px 260px;
+}
