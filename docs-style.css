@@ -20,8 +20,11 @@
       border: 1px solid #0b0529;
       border-radius: 16px;
       line-height: 175%;
-      width: 90%;
+      width: 60%;
       margin: 10px auto 10px auto;
+    }
+    code {
+      width: auto;
     }
     input#copy {
       background-color: #0b0529;
