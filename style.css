@@ -176,6 +176,10 @@
     user-select: none;
     text-align: center;
   }
+  div[data-btn-type] a {
+    color: inherit;
+    text-decoration: inherit;
+  }
     div[data-btn-type]:hover {
     transform: translate(0px, -2px) !important;
   }
