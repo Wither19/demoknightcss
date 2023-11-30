@@ -214,6 +214,7 @@
     background-color: #7DF9FF;
     border: #7DF9FF solid 1px;
     box-shadow: 0px 10px #5bb6ba;
+    color: slategray;
   }
   div[data-btn-type="cyan"]:hover {
     box-shadow: 0px 14px #5bb6ba;
@@ -246,6 +247,7 @@ div[data-btn-type="red"] {
     background-color: #7DF9FF !important;
     border: #7DF9FF solid 1px !important;
     box-shadow: 0px 8px #5bb6ba !important;
+    color: slategray !important;
   }
       div[data-btn-fade="red"]:active {
     background-color: salmon !important;
