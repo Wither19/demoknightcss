@@ -1,83 +1,83 @@
-    html, body {
-        overflow-x: hidden;
-    }
-    body > * {
-      text-align: center;
-    }
-    p {
-      line-height: 200%;
-    }
-    h1, p {
-      font-family: verdana;
-    }
-    sup {
-      letter-spacing: 4px;
-    }
-    pre {
-      background-color: #0b0529;
-      color: antiquewhite;
-      font-size: 24px;
-      border: 1px solid #0b0529;
-      border-radius: 16px;
-      line-height: 175%;
-      width: 60%;
-      margin: 10px auto 10px auto;
-    }
-    code {
-      width: auto;
-    }
-    input#copy {
-      background-color: #0b0529;
-      color: antiquewhite;
-      text-align: center; 
-      margin: 10px auto 10px auto; 
-      width: 90%;
-    }
-    a:visited {
-      color: blue;
-    }
-    .nav {
-      background-color: #0b0529;
-      color: antiquewhite !important;
-      font-size: 12px;
-      border: 1px solid #0b0529;
-      padding: 12px;
-      line-height: 175%;
-      width: 100%;
-      overflow: hidden;
-      margin: 10px auto 10px auto;
-    }
-    .nav a {
-    color: lime !important;
-    text-decoration: none;
-    float: left;
-    font-size: 24px;
-    width: 50%;
-    padding: 12px 0%;
+ html, body {
+     overflow-x: hidden;
 }
-    .nav a:hover {
-      color: forestgreen;
+ body > * {
+     text-align: center;
+}
+ p {
+     line-height: 200%;
+}
+ h1, p {
+     font-family: verdana;
+}
+ sup {
+     letter-spacing: 4px;
+}
+ pre {
+     background-color: #0b0529;
+     color: antiquewhite;
+     font-size: 24px;
+     border: 1px solid #0b0529;
+     border-radius: 16px;
+     line-height: 175%;
+     width: 60%;
+     margin: 10px auto 10px auto;
+}
+ code {
+     width: auto;
+}
+ input#copy {
+     background-color: #0b0529;
+     color: antiquewhite;
+     text-align: center;
+     margin: 10px auto 10px auto;
+     width: 90%;
+}
+ a:visited {
+     color: blue;
+}
+ .nav {
+     background-color: #0b0529;
+     color: antiquewhite !important;
+     font-size: 12px;
+     border: 1px solid #0b0529;
+     padding: 12px;
+     line-height: 175%;
+     width: 100%;
+     overflow: hidden;
+     margin: 10px auto 10px auto;
+}
+ .nav a {
+     color: lime !important;
+     text-decoration: none;
+     float: left;
+     font-size: 24px;
+     width: 50%;
+     padding: 12px 0%;
+}
+ .nav a:hover {
+     color: forestgreen;
+}
+ #fontsthing {
+     animation: fontcycle 9s linear infinite;
+}
+ @keyframes fontcycle {
+     0% {
+         font-family: PT Serif;
     }
-    #fontsthing {
-        animation: fontcycle 9s linear infinite;
+     25% {
+         font-family: Merriweather;
     }
-    @keyframes fontcycle {
-        0% {
-            font-family: PT Serif;
-        }
-        25% {
-            font-family: Merriweather;
-        }
-        50% {
-            font-family: Oswald; 
-        }
-        75% {
-            font-family: New Super Mario Font U;
-        }
-        100% {
-            font-family: TF2 Build;
-        }
+     50% {
+         font-family: Oswald;
     }
-    li.nav-item {
-    padding: 0px 260px;
+     75% {
+         font-family: New Super Mario Font U;
+    }
+     100% {
+         font-family: TF2 Build;
+    }
+}
+ li.nav-item {
+     padding: 0px 260px;
 }
