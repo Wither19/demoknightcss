@@ -1,5 +1,6 @@
 
 
+
 <html><head><title>3D Buttons</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +18,9 @@
   padding: 12px;
   border-collapse: collapse;
   }
+  div[data-btn-rounded="false"] {
+      border-radius: 0px !important;
+  }
   </style>
 </head>
 <body>
@@ -29,9 +33,9 @@
       <a class="nav-link" href="https://wither19.github.io/landing/">Landing Page</a>
     </li>
   </ul>
-</nav>
+</nav><br>
     <float><h1>3D Buttons</h1></float>
-  <p>Use the attribute <b>"data-btn-type"</b> on divs or block elements to get this premade 3D-looking button partially inspired by Gimkit's GUI. <br><b>"data-btn-fade"</b> sets a color transition on clicking the button. <br><b>"data-btn-smooth"</b> is a boolean value for enabling/disabling smooth transitions (It is true by default). <br>Below is a list of colors and options available for the 3D buttons.</p>
+  <p>Use the attribute <b>"data-btn-type"</b> on divs to get this premade 3D-looking button partially inspired by Gimkit's GUI. <br><b>"data-btn-fade"</b> sets a color transition on clicking the button. <br><b>"data-btn-smooth"</b> is a boolean value for enabling/disabling smooth transitions (It is true by default). <br>Below is a list of colors and options available for the 3D buttons.<br><b>"data-btn-rounded"</b> is another boolean value (again, true by default) that defines border radius in the buttons.</p>
   <br><float><h1>3D Button Syntax</h1></float>
   <center><table>
     <tr>
@@ -67,7 +71,13 @@
     <tr>
       <td>&ltdiv data-btn-type="gold" data-btn-fade="gold" data-btn-smooth="false"&gt</td>
       <td>Gold > Purple (No transitions)</td>
-      <td><div data-btn-type="gold" data-btn-fade="purple" data-btn-smooth="false">Button</td>
+      <td><div data-btn-type="gold" data-btn-fade="purple" data-btn-smooth="false">Button</div></td>
     </tr>
-  </table></center>
+    <tr>
+      <td>&ltdiv data-btn-type="cyan" data-btn-fade="gold" data-btn-rounded="false"&gt</td>
+      <td>Cyan > Gold (sharp corners)</td>
+      <td><div data-btn-type="cyan" data-btn-fade="gold" data-btn-rounded="false">Button</div></td>
+    </tr>
+  </table>
+  </center>
 </body></html>
