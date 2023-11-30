@@ -1,241 +1,249 @@
-  @import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
-  @import url('https://fonts.cdnfonts.com/css/tf2-build');
-  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-  /*Full list of custom fonts embedded into the framework, from nice serif fonts to videogame-inspired ones*/
-  scripture {
-    font-family: 'PT Serif';
-    font-size: 0.9rem;
-    font-weight: 400;
-    text-align: center;
-    display: block;
-    margin: 10px auto 10px auto;
-    width: 100%;
-  }
-  scripture sup {
-    letter-spacing: 4px;
-  }
-  verse {
-    font-family: 'PT Serif';
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-align: center;
-    display: block;
-    margin: 10px auto 10px auto;
-  }
-  float {
-    animation: float 6s linear infinite;
-    display: block;
-  }
-  @keyframes float {
-        0% {
-            transform: translate(0px, 0px);
-            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
-        }
-        10% {
-            
-            filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
-        }
-        20% {
-            transform: translate(0px, -4px);
-            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
-        }
-        30% {
-            transform: translate(0px, -6px);
-            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
-        }
-        40% {
-            transform: translate(0px, -8px);
-            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
-        }
-        50% {
-            transform: translate(0px, -10px);
-            filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 20px 8px gray);
-        }
-        60% {
-            transform: translate(0px, -8px);
-            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
-        }
-        70% {
-            transform: translate(0px, -6px);
-            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
-        }
-        80% {
-            transform: translate(0px, -4px);
-            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
-        }
-        90% {
-            
-            filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
-        }
-        100% {
-            transform: translate(0px, 0px);
-            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
-        }
+ @import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+ @import url('https://fonts.cdnfonts.com/css/tf2-build');
+ @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;
+0,700;
+1,400;
+1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;
+0,400;
+0,700;
+0,900;
+1,300;
+1,400;
+1,700;
+1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;
+700&display=swap');
+/*Full list of custom fonts embedded into the framework, from nice serif fonts to videogame-inspired ones*/
+ scripture {
+     font-family: 'PT Serif';
+     font-size: 0.9rem;
+     font-weight: 400;
+     text-align: center;
+     display: block;
+     margin: 10px auto 10px auto;
+     width: 100%;
+}
+ scripture sup {
+     letter-spacing: 4px;
+}
+ verse {
+     font-family: 'PT Serif';
+     font-size: 1.1rem;
+     font-weight: 700;
+     text-align: center;
+     display: block;
+     margin: 10px auto 10px auto;
+}
+ float {
+     animation: float 6s linear infinite;
+     display: block;
+}
+ @keyframes float {
+     0% {
+         transform: translate(0px, 0px);
+         filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
     }
-        vocab {
-            color: lime;
-            text-decoration:underline;
-            font-size:1.05rem;
-            transition: all 200ms;
+     10% {
+         filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
     }
-        vocab:hover {
-            color: white;
-            background-color: green;
-            font-size: 1.1rem;
-            padding: 5px;
-        }
-        nsmbu {
-         color: gold;
-         background-color: #FFF5EE;
-         width: 15%;
-         padding: 45px 20px 45px 20px;
-         border-radius: 20px;
-         text-align: center;
-         font-size: 48px;
-         font-family: 'New Super Mario Font U', sans-serif;
-         border: 1px solid ghostwhite;
-         letter-spacing: 2px;
-         box-shadow: -5px -5px 5px lightblue inset, 5px -5px 5px lightblue inset, -5px -8px 8px lightblue inset, 5px -8px 8px lightblue inset;
-         filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.5));
-         transition: 70ms ease-out;
-        margin: 20px auto 20px auto;
-        cursor: pointer;
-        user-select: none;
-        display: block;
-        }
-        nsmbu:hover {
-        transform: translate(0px, 2px) scale(1.1);
-        }
-        nsmbu:active {
-        transform: translate(0px, -6px);
-        transition: 150ms cubic-bezier(0, 0.57, 1, 1);
-        }
-        nsmbu number {
-            color: #6495ED;
-            font-size: 60px;
-            font-family: 'New Super Mario Font U', sans-serif;
-            position: relative;
-            top: -55px;
-            left: -180px;
-        }
-        nsmbu span {
-        position: relative;
-           top:-5px;
-           left: 16px;
-        }
-        sadx {
-            background-color: rgba(0, 171, 255, 0.5);
-            border: 1px solid rgba(0, 171, 255, 0.5);
-            border-radius: 5px;
-            width: 25%;
-            margin: 20px auto 20px auto;
-            font-size: 30px;
-            filter: drop-shadow(2px);
-            margin: 10px auto 10px auto;
-            display: block;
-        }
-        sadx-select {
-            border-width: 4px; 
-            border-style: solid; 
-            background-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,171,255,1) 100%);
-            border-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,171,255,1) 100%) 1;
-            font-family: sans-serif;
-            color: white;
-            text-align:center;
-            width: 80%;
-            margin: 16px auto 16px auto;
-            cursor: pointer;
-            display: block;
-        }
-        sadx-select:hover {
-            animation: sadx-outline 2s linear infinite;
-        }
-        @keyframes sadx-outline {
-            0% {
-                border: solid 4px orange;
-            }
-            50% {
-                border: solid 4px gold;
-            }
-            100% {
-                border: solid 4px orange;
-            }
-        }
-    div[data-btn-type] {
-    color: white;
-    font-size: 36px;
-    width: 95%;
-    border-radius: 12px;
-    padding: 10px;
-    transition: 180ms;
-    margin: 30px auto 30px auto;
-    filter: drop-shadow(0px 20px 12px gray);
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
-  }
-  div[data-btn-type] a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-    div[data-btn-type]:hover {
-    transform: translate(0px, -2px) !important;
-  }
-  div[data-btn-type]:active {
+     20% {
+         transform: translate(0px, -4px);
+         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
+    }
+     30% {
+         transform: translate(0px, -6px);
+         filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
+    }
+     40% {
+         transform: translate(0px, -8px);
+         filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
+    }
+     50% {
+         transform: translate(0px, -10px);
+         filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 20px 8px gray);
+    }
+     60% {
+         transform: translate(0px, -8px);
+         filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
+    }
+     70% {
+         transform: translate(0px, -6px);
+         filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
+    }
+     80% {
+         transform: translate(0px, -4px);
+         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
+    }
+     90% {
+         filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
+    }
+     100% {
+         transform: translate(0px, 0px);
+         filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
+    }
+}
+ vocab {
+     color: lime;
+     text-decoration:underline;
+     font-size:1.05rem;
+     transition: all 200ms;
+}
+ vocab:hover {
+     color: white;
+     background-color: green;
+     font-size: 1.1rem;
+     padding: 5px;
+}
+ nsmbu {
+     color: gold;
+     background-color: #FFF5EE;
+     width: 15%;
+     padding: 45px 20px 45px 20px;
+     border-radius: 20px;
+     text-align: center;
+     font-size: 48px;
+     font-family: 'New Super Mario Font U', sans-serif;
+     border: 1px solid ghostwhite;
+     letter-spacing: 2px;
+     box-shadow: -5px -5px 5px lightblue inset, 5px -5px 5px lightblue inset, -5px -8px 8px lightblue inset, 5px -8px 8px lightblue inset;
+     filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.5));
+     transition: 70ms ease-out;
+     margin: 20px auto 20px auto;
+     cursor: pointer;
+     user-select: none;
+     display: block;
+}
+ nsmbu:hover {
+     transform: translate(0px, 2px) scale(1.1);
+}
+ nsmbu:active {
+     transform: translate(0px, -6px);
+     transition: 150ms cubic-bezier(0, 0.57, 1, 1);
+}
+ nsmbu number {
+     color: #6495ED;
+     font-size: 60px;
+     font-family: 'New Super Mario Font U', sans-serif;
+     position: relative;
+     top: -55px;
+     left: -180px;
+}
+ nsmbu span {
+     position: relative;
+     top:-5px;
+     left: 16px;
+}
+ sadx {
+     background-color: rgba(0, 171, 255, 0.5);
+     border: 1px solid rgba(0, 171, 255, 0.5);
+     border-radius: 5px;
+     width: 25%;
+     margin: 20px auto 20px auto;
+     font-size: 30px;
+     filter: drop-shadow(2px);
+     margin: 10px auto 10px auto;
+     display: block;
+}
+ sadx-select {
+     border-width: 4px;
+     border-style: solid;
+     background-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,171,255,1) 100%);
+     border-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,171,255,1) 100%) 1;
+     font-family: sans-serif;
+     color: white;
+     text-align:center;
+     width: 80%;
+     margin: 16px auto 16px auto;
+     cursor: pointer;
+     display: block;
+}
+ sadx-select:hover {
+     animation: sadx-outline 2s linear infinite;
+}
+ @keyframes sadx-outline {
+     0% {
+         border: solid 4px orange;
+    }
+     50% {
+         border: solid 4px gold;
+    }
+     100% {
+         border: solid 4px orange;
+    }
+}
+ div[data-btn-type] {
+     color: white;
+     font-size: 36px;
+     width: 95%;
+     border-radius: 12px;
+     padding: 10px;
+     transition: 180ms;
+     margin: 30px auto 30px auto;
+     filter: drop-shadow(0px 20px 12px gray);
+     cursor: pointer;
+     user-select: none;
+     text-align: center;
+}
+ div[data-btn-type] a {
+     color: inherit;
+     text-decoration: inherit;
+}
+ div[data-btn-type]:hover {
+     transform: translate(0px, -2px) !important;
+}
+ div[data-btn-type]:active {
      transform: translate(0px, 2px) !important;
-  }
-    div[data-btn-type="purple"] {
-    background-color: slateblue;
-    border: slateblue solid 1px;
-    box-shadow: 0px 10px darkslateblue;
-  }
-      div[data-btn-type="purple"]:hover {
-      box-shadow: 0px 14px darkslateblue;
-  }
-    div[data-btn-type="purple"]:active {
-    box-shadow: 0px 8px darkslateblue;
-  }
-    div[data-btn-type="gold"] {
-    background-color: #ffd700;
-    border: #ffd700 solid 1px;
-    box-shadow: 0px 10px #b09502;
-  }
-    div[data-btn-type="gold"]:hover {
-    box-shadow: 0px 14px #b09502;
-    
-  }
-    div[data-btn-type="gold"]:active {
-    box-shadow: 0px 8px #b09502;
-    
-  }
-    div[data-btn-type="cyan"] {
-    background-color: #7DF9FF;
-    border: #7DF9FF solid 1px;
-    box-shadow: 0px 10px #5bb6ba;
-  }
-  div[data-btn-type="cyan"]:hover {
-    box-shadow: 0px 14px #5bb6ba;
-  }
-  div[data-btn-type="cyan"]:active {
-    box-shadow: 0px 8px #5bb6ba;
-  }
-        div[data-btn-fade="purple"]:active {
-    background-color: slateblue !important;
-    border: slateblue solid 1px !important;
-    box-shadow: 0px 8px darkslateblue !important;
-  }
-      div[data-btn-fade="gold"]:active {
-    background-color: #ffd700 !important;
-    border: #ffd700 solid 1px !important;
-    box-shadow: 0px 8px #b09502 !important;
-  }
-      div[data-btn-fade="cyan"]:active {
-    background-color: #7DF9FF !important;
-    border: #7DF9FF solid 1px !important;
-    box-shadow: 0px 8px #5bb6ba !important;
-  }
-    div[data-btn-smooth="false"] {
-    transition: transform 10ms, box-shadow 10ms, background-color 10ms !important;
-  }
+}
+ div[data-btn-type="purple"] {
+     background-color: slateblue;
+     border: slateblue solid 1px;
+     box-shadow: 0px 10px darkslateblue;
+}
+ div[data-btn-type="purple"]:hover {
+     box-shadow: 0px 14px darkslateblue;
+}
+ div[data-btn-type="purple"]:active {
+     box-shadow: 0px 8px darkslateblue;
+}
+ div[data-btn-type="gold"] {
+     background-color: #ffd700;
+     border: #ffd700 solid 1px;
+     box-shadow: 0px 10px #b09502;
+}
+ div[data-btn-type="gold"]:hover {
+     box-shadow: 0px 14px #b09502;
+}
+ div[data-btn-type="gold"]:active {
+     box-shadow: 0px 8px #b09502;
+}
+ div[data-btn-type="cyan"] {
+     background-color: #7DF9FF;
+     border: #7DF9FF solid 1px;
+     box-shadow: 0px 10px #5bb6ba;
+}
+ div[data-btn-type="cyan"]:hover {
+     box-shadow: 0px 14px #5bb6ba;
+}
+ div[data-btn-type="cyan"]:active {
+     box-shadow: 0px 8px #5bb6ba;
+}
+ div[data-btn-fade="purple"]:active {
+     background-color: slateblue !important;
+     border: slateblue solid 1px !important;
+     box-shadow: 0px 8px darkslateblue !important;
+}
+ div[data-btn-fade="gold"]:active {
+     background-color: #ffd700 !important;
+     border: #ffd700 solid 1px !important;
+     box-shadow: 0px 8px #b09502 !important;
+}
+ div[data-btn-fade="cyan"]:active {
+     background-color: #7DF9FF !important;
+     border: #7DF9FF solid 1px !important;
+     box-shadow: 0px 8px #5bb6ba !important;
+}
+ div[data-btn-smooth="false"] {
+     transition: transform 10ms, box-shadow 10ms, background-color 10ms !important;
+}
+ 
