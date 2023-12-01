@@ -1,244 +1,299 @@
+<html>
 
-
-
-
-<html><head><title>3D Buttons</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<head>
+    <title>3D Buttons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/style.css">
-  <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/docs-style.css">
-  <style>
-      table {
-     margin: 10px auto 10px auto;
-  }
-  th, td {
-  border: 2px solid black;
-  font-size: 28px;
-  padding: 12px;
-  border-collapse: collapse;
-  }
-  div[data-btn-type] {
-    color: white;
-    font-size: 36px;
-    width: 95%;
-    border-radius: 12px;
-    padding: 10px;
-    transition: 180ms;
-    margin: 30px auto 30px auto;
-    filter: drop-shadow(0px 20px 12px gray);
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
-  }
-  div[data-btn-type] a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-    div[data-btn-type]:hover {
-    transform: translate(0px, -2px) !important;
-  }
-  div[data-btn-type]:active {
-     transform: translate(0px, 2px) !important;
-  }
-    div[data-btn-type="purple"] {
-    background-color: slateblue;
-    border: slateblue solid 1px;
-    box-shadow: 0px 10px darkslateblue;
-    color: white !important;
-  }
-      div[data-btn-type="purple"]:hover {
-      box-shadow: 0px 14px darkslateblue;
-  }
-    div[data-btn-type="purple"]:active {
-    box-shadow: 0px 8px darkslateblue;
-  }
-    div[data-btn-type="gold"] {
-    background-color: #ffd700;
-    border: #ffd700 solid 1px;
-    box-shadow: 0px 10px #b09502;
-    color: white !important;
-  }
-    div[data-btn-type="gold"]:hover {
-    box-shadow: 0px 14px #b09502;
-    
-  }
-    div[data-btn-type="gold"]:active {
-    box-shadow: 0px 8px #b09502;
-    
-  }
-    div[data-btn-type="cyan"] {
-    background-color: #7DF9FF;
-    border: #7DF9FF solid 1px;
-    box-shadow: 0px 10px #5bb6ba;
-    color: slategray;
-  }
-  div[data-btn-type="cyan"]:hover {
-    box-shadow: 0px 14px #5bb6ba;
-  }
-  div[data-btn-type="cyan"]:active {
-    box-shadow: 0px 8px #5bb6ba;
-  }
-div[data-btn-type="red"] {
-    background-color: salmon;
-    border: salmon solid 1px;
-    box-shadow: 0px 10px #E35335;
-    color: white !important;
-  }
-      div[data-btn-type="red"]:hover {
-      box-shadow: 0px 14px #E35335;
-  }
-    div[data-btn-type="red"]:active {
-    box-shadow: 0px 8px #E35335;
-  }
-    div[data-btn-type="xbox"] {
-    background-color: lightgray;
-    border: lightgray solid 1px;
-    box-shadow: 0px 10px gray;
-    color: green !important;
-    font-size: 4rem;
-    width: auto;
-  }
-  div[data-btn-type="xbox"]:hover {
-    background-color: green;
-    color: white !important;
-    box-shadow: 0px 14px green;
-  }
-  div[data-btn-type="xbox"]:active {
-    box-shadow: 0px 8px green;
-  }
-  div[data-btn-type="nintendo"] {
-    background-color: lightgray;
-    border: lightgray solid 1px;
-    box-shadow: 0px 10px gray;
-    color: red !important;
-    font-size: 4rem;
-    width: auto;
-  }
-  div[data-btn-type="nintendo"]:hover {
-    background-color: red;
-    color: white !important;
-    box-shadow: 0px 14px red;
-  }
-  div[data-btn-type="nintendo"]:active {
-    box-shadow: 0px 8px red;
-  }
-    div[data-btn-type="playstation"] {
-    background-color: lightgray;
-    border: lightgray solid 1px;
-    box-shadow: 0px 10px gray;
-    color: darkblue !important;
-    font-size: 4rem;
-    width: auto;
-  }
-  div[data-btn-type="playstation"]:hover {
-    background-color: darkblue;
-    color: white !important;
-    box-shadow: 0px 14px darkblue;
-  }
-  div[data-btn-type="playstation"]:active {
-    box-shadow: 0px 8px darkblue;
-  }
+    <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/docs-style.css">
+    <style>
+        table {
+            margin: 10px auto 10px auto;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            font-size: 28px;
+            padding: 12px;
+            border-collapse: collapse;
+        }
+
+        div[data-btn-type] {
+            color: white;
+            font-size: 36px;
+            width: 95%;
+            border-radius: 12px;
+            padding: 10px;
+            transition: 180ms;
+            margin: 30px auto 30px auto;
+            filter: drop-shadow(0px 20px 12px gray);
+            cursor: pointer;
+            user-select: none;
+            text-align: center;
+        }
+
+        div[data-btn-type] a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        div[data-btn-type]:hover {
+            transform: translate(0px, -2px) !important;
+        }
+
+        div[data-btn-type]:active {
+            transform: translate(0px, 2px) !important;
+        }
+
+        div[data-btn-type="purple"] {
+            background-color: slateblue;
+            border: slateblue solid 1px;
+            box-shadow: 0px 10px darkslateblue;
+            color: white !important;
+        }
+
+        div[data-btn-type="purple"]:hover {
+            box-shadow: 0px 14px darkslateblue;
+        }
+
+        div[data-btn-type="purple"]:active {
+            box-shadow: 0px 8px darkslateblue;
+        }
+
+        div[data-btn-type="gold"] {
+            background-color: #ffd700;
+            border: #ffd700 solid 1px;
+            box-shadow: 0px 10px #b09502;
+            color: white !important;
+        }
+
+        div[data-btn-type="gold"]:hover {
+            box-shadow: 0px 14px #b09502;
+
+        }
+
+        div[data-btn-type="gold"]:active {
+            box-shadow: 0px 8px #b09502;
+
+        }
+
+        div[data-btn-type="cyan"] {
+            background-color: #7DF9FF;
+            border: #7DF9FF solid 1px;
+            box-shadow: 0px 10px #5bb6ba;
+            color: slategray;
+        }
+
+        div[data-btn-type="cyan"]:hover {
+            box-shadow: 0px 14px #5bb6ba;
+        }
+
+        div[data-btn-type="cyan"]:active {
+            box-shadow: 0px 8px #5bb6ba;
+        }
+
+        div[data-btn-type="red"] {
+            background-color: salmon;
+            border: salmon solid 1px;
+            box-shadow: 0px 10px #E35335;
+            color: white !important;
+        }
+
+        div[data-btn-type="red"]:hover {
+            box-shadow: 0px 14px #E35335;
+        }
+
+        div[data-btn-type="red"]:active {
+            box-shadow: 0px 8px #E35335;
+        }
+
+        div[data-btn-type="xbox"] {
+            background-color: lightgray;
+            border: lightgray solid 1px;
+            box-shadow: 0px 10px gray;
+            color: green !important;
+            font-size: 4rem;
+            width: auto;
+        }
+
+        div[data-btn-type="xbox"]:hover {
+            background-color: green;
+            color: white !important;
+            box-shadow: 0px 14px green;
+        }
+
+        div[data-btn-type="xbox"]:active {
+            box-shadow: 0px 8px green;
+        }
+
+        div[data-btn-type="nintendo"] {
+            background-color: lightgray;
+            border: lightgray solid 1px;
+            box-shadow: 0px 10px gray;
+            color: red !important;
+            font-size: 4rem;
+            width: auto;
+        }
+
+        div[data-btn-type="nintendo"]:hover {
+            background-color: red;
+            color: white !important;
+            box-shadow: 0px 14px red;
+        }
+
+        div[data-btn-type="nintendo"]:active {
+            box-shadow: 0px 8px red;
+        }
+
+        div[data-btn-type="playstation"] {
+            background-color: lightgray;
+            border: lightgray solid 1px;
+            box-shadow: 0px 10px gray;
+            color: darkblue !important;
+            font-size: 4rem;
+            width: auto;
+        }
+
+        div[data-btn-type="playstation"]:hover {
+            background-color: darkblue;
+            color: white !important;
+            box-shadow: 0px 14px darkblue;
+        }
+
+        div[data-btn-type="playstation"]:active {
+            box-shadow: 0px 8px darkblue;
+        }
+
         div[data-btn-fade="purple"]:active {
-    background-color: slateblue !important;
-    border: slateblue solid 1px !important;
-    box-shadow: 0px 8px darkslateblue !important;
-    color: white !important;
-  }
-      div[data-btn-fade="gold"]:active {
-    background-color: #ffd700 !important;
-    border: #ffd700 solid 1px !important;
-    box-shadow: 0px 8px #b09502 !important;
-    color: white !important;
-  }
-      div[data-btn-fade="cyan"]:active {
-    background-color: #7DF9FF !important;
-    border: #7DF9FF solid 1px !important;
-    box-shadow: 0px 8px #5bb6ba !important;
-    color: slategray !important;
-  }
-      div[data-btn-fade="red"]:active {
-    background-color: salmon !important;
-    border: salmon solid 1px !important;
-    box-shadow: 0px 8px #E35335 !important;
-    color: white !important;
-  }
-    div[data-btn-smooth="false"] {
-    transition: transform 10ms, box-shadow 10ms, background-color 10ms !important;
-  }
-div[data-btn-rounded="false"] {
-      border-radius: 0px !important;
-  }
-  </style>
+            background-color: slateblue !important;
+            border: slateblue solid 1px !important;
+            box-shadow: 0px 8px darkslateblue !important;
+            color: white !important;
+        }
+
+        div[data-btn-fade="gold"]:active {
+            background-color: #ffd700 !important;
+            border: #ffd700 solid 1px !important;
+            box-shadow: 0px 8px #b09502 !important;
+            color: white !important;
+        }
+
+        div[data-btn-fade="cyan"]:active {
+            background-color: #7DF9FF !important;
+            border: #7DF9FF solid 1px !important;
+            box-shadow: 0px 8px #5bb6ba !important;
+            color: slategray !important;
+        }
+
+        div[data-btn-fade="red"]:active {
+            background-color: salmon !important;
+            border: salmon solid 1px !important;
+            box-shadow: 0px 8px #E35335 !important;
+            color: white !important;
+        }
+
+        div[data-btn-smooth="false"] {
+            transition: transform 10ms, box-shadow 10ms, background-color 10ms !important;
+        }
+
+        div[data-btn-rounded="false"] {
+            border-radius: 0px !important;
+        }
+    </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="https://wither19.github.io/demoknightcss/">Back</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://wither19.github.io/landing/">Landing Page</a>
-    </li>
-  </ul>
-</nav><br>
-    <float><h1>3D Buttons</h1></float>
-  <p style="max-width: 80%; margin: 10px auto 10px auto;">The attribute <b>"data-btn-type"</b> can be used with divs to get this premade 3D-looking button partially inspired by Gimkit's GUI. <br><b>"data-btn-fade"</b> sets a color transition on clicking the button. <br><b>"data-btn-smooth"</b> is a boolean value for enabling/disabling smooth transitions (It is true by default). <br><b>"data-btn-rounded"</b> is another boolean value (again, true by default) that defines border radius in the buttons.<br><br>Below is a list of colors and options available for the 3D buttons.</p>
-  <br><float><h1>3D Button Syntax</h1></float>
-  <center><table>
-    <tr>
-      <th>Code</th>
-      <th>Result</th>
-      <th>Preview</th>
-    </tr>
-    <tr>
-      <td>&ltdiv data-btn-type="purple"&gt</td>
-      <td>Purple</td>
-      <td><div data-btn-type="purple">button</div></td>
-    </tr>
-    <tr>
-      <td>&ltdiv data-btn-type="gold"&gt</td>
-      <td>Gold</td>
-      <td><div data-btn-type="gold">button</div></td>
-    </tr>
-    <tr>
-      <td>&ltdiv data-btn-type="cyan"&gt</td>
-      <td>Cyan</td>
-      <td><div data-btn-type="cyan">button</div></td>
-    </tr>
-    <tr>
-      <td>&ltdiv data-btn-type="purple" data-btn-fade="cyan"&gt</td>
-      <td>Purple > Cyan</td>
-      <td><div data-btn-type="purple" data-btn-fade="cyan">button</div></td>
-    </tr>
-        <tr>
-      <td>&ltdiv data-btn-type="red" data-btn-smooth="false"&gt</td>
-      <td>Red (No transitions)</td>
-      <td><div data-btn-type="red" data-btn-fade="red" data-btn-smooth="false">Button</td>
-    </tr>
-    <tr>
-      <td>&ltdiv data-btn-type="gold" data-btn-fade="gold" data-btn-smooth="false"&gt</td>
-      <td>Gold > Purple (No transitions)</td>
-      <td><div data-btn-type="gold" data-btn-fade="purple" data-btn-smooth="false">Button</div></td>
-    </tr>
-    <tr>
-      <td>&ltdiv data-btn-type="cyan" data-btn-fade="gold" data-btn-rounded="false"&gt</td>
-      <td>Cyan > Gold (sharp corners)</td>
-      <td><div data-btn-type="cyan" data-btn-fade="gold" data-btn-rounded="false">Button</div></td>
-    </tr>
-  </table>
-<div class="row">  
-<div class="col-4">
-  <div data-btn-type="xbox" data-btn-smooth="fals"><i class="bi bi-xbox"></i></div>
-</div>
-<div class="col-4">
-  <div data-btn-type="nintendo" data-btn-smooth="fals"><i class="bi bi-nintendo-switch"></i></div>
-</div>
-<div class="col-4">           
-<div data-btn-type="playstation" data-btn-smooth="fals"><i class="bi bi-playstation"></i>
-</div>
-</div></div>
-      </center>
-</body></html>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://wither19.github.io/demoknightcss/">Back</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://wither19.github.io/landing/">Landing Page</a>
+            </li>
+        </ul>
+    </nav><br>
+    <float>
+        <h1>3D Buttons</h1>
+    </float>
+    <p style="max-width: 80%; margin: 10px auto 10px auto;">The attribute <b>"data-btn-type"</b> can be used with divs to get this premade 3D-looking button partially inspired by Gimkit's GUI. <br><b>"data-btn-fade"</b> sets a color transition on clicking the button. <br><b>"data-btn-smooth"</b> is a boolean value for enabling/disabling smooth transitions (It is true by default). <br><b>"data-btn-rounded"</b> is another boolean value (again, true by default) that defines border radius in the buttons.<br><br>You may adjust the width of the buttons as necessary.<br><br>Below is a list of colors and options available for the 3D buttons.</p>
+    <br>
+    <float>
+        <h1>3D Button Syntax</h1>
+    </float>
+    <center>
+        <table>
+            <tr>
+                <th>Code</th>
+                <th>Result</th>
+                <th>Preview</th>
+            </tr>
+            <tr>
+                <td>&ltdiv data-btn-type="purple"&gt</td>
+                <td>Purple</td>
+                <td>
+                    <div data-btn-type="purple">button</div>
+                </td>
+            </tr>
+            <tr>
+                <td>&ltdiv data-btn-type="gold"&gt</td>
+                <td>Gold</td>
+                <td>
+                    <div data-btn-type="gold">button</div>
+                </td>
+            </tr>
+            <tr>
+                <td>&ltdiv data-btn-type="cyan"&gt</td>
+                <td>Cyan</td>
+                <td>
+                    <div data-btn-type="cyan">button</div>
+                </td>
+            </tr>
+            <tr>
+                <td>&ltdiv data-btn-type="purple" data-btn-fade="cyan"&gt</td>
+                <td>Purple > Cyan</td>
+                <td>
+                    <div data-btn-type="purple" data-btn-fade="cyan">button</div>
+                </td>
+            </tr>
+            <tr>
+                <td>&ltdiv data-btn-type="red" data-btn-smooth="false"&gt</td>
+                <td>Red (No transitions)</td>
+                <td>
+                    <div data-btn-type="red" data-btn-fade="red" data-btn-smooth="false">Button</td>
+            </tr>
+            <tr>
+                <td>&ltdiv data-btn-type="gold" data-btn-fade="gold" data-btn-smooth="false"&gt</td>
+                <td>Gold > Purple (No transitions)</td>
+                <td>
+                    <div data-btn-type="gold" data-btn-fade="purple" data-btn-smooth="false">Button</div>
+                </td>
+            </tr>
+            <tr>
+                <td>&ltdiv data-btn-type="cyan" data-btn-fade="gold" data-btn-rounded="false"&gt</td>
+                <td>Cyan > Gold (sharp corners)</td>
+                <td>
+                    <div data-btn-type="cyan" data-btn-fade="gold" data-btn-rounded="false">Button</div>
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-4">
+                <div data-btn-type="xbox" data-btn-smooth="fals"><i class="bi bi-xbox"></i></div>
+            </div>
+            <div class="col-4">
+                <div data-btn-type="nintendo" data-btn-smooth="fals"><i class="bi bi-nintendo-switch"></i></div>
+            </div>
+            <div class="col-4">
+                <div data-btn-type="playstation" data-btn-smooth="fals"><i class="bi bi-playstation"></i>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
