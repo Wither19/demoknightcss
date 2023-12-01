@@ -123,11 +123,12 @@
         div[data-btn-type="xbox"]:hover {
             background-color: green;
             color: white !important;
-            box-shadow: 0px 14px green;
+            border: green solid 1px;
+            box-shadow: 0px 14px darkgreen;
         }
 
         div[data-btn-type="xbox"]:active {
-            box-shadow: 0px 8px green;
+            box-shadow: 0px 8px darkgreen;
         }
 
         div[data-btn-type="nintendo"] {
@@ -141,12 +142,13 @@
 
         div[data-btn-type="nintendo"]:hover {
             background-color: red;
+            border: red solid 1px;
             color: white !important;
-            box-shadow: 0px 14px red;
+            box-shadow: 0px 14px #D22B2B;
         }
 
         div[data-btn-type="nintendo"]:active {
-            box-shadow: 0px 8px red;
+            box-shadow: 0px 8px #D22B2B;
         }
 
         div[data-btn-type="playstation"] {
@@ -161,13 +163,30 @@
         div[data-btn-type="playstation"]:hover {
             background-color: darkblue;
             color: white !important;
-            box-shadow: 0px 14px darkblue;
+            border: solid 1px darkblue;
+            box-shadow: 0px 14px #030366;
         }
 
         div[data-btn-type="playstation"]:active {
-            box-shadow: 0px 8px darkblue;
+            box-shadow: 0px 8px #030366;
         }
-
+        div[data-btn-type="steam"] {
+          background-color: lightgray;
+            border: lightgray solid 1px;
+            box-shadow: 0px 10px gray;
+            color: #2a375e !important;
+            font-size: 4rem;
+            width: auto;
+        }
+        div[data-btn-type="steam"]:hover {
+            background-color: #2a375e;
+            color: white !important;
+            border: solid 1px #2a375e;
+            box-shadow: 0px 14px #192138;
+        }
+        div[data-btn-type="steam"]:active {
+          box-shadow: 0px 8px #192138;
+        }
         div[data-btn-fade="purple"]:active {
             background-color: slateblue !important;
             border: slateblue solid 1px !important;
@@ -281,18 +300,22 @@
                 </td>
             </tr>
         </table>
-        <div class="row">
-            <div class="col-4">
-                <div data-btn-type="xbox" data-btn-smooth="fals"><i class="bi bi-xbox"></i></div>
-            </div>
-            <div class="col-4">
-                <div data-btn-type="nintendo" data-btn-smooth="fals"><i class="bi bi-nintendo-switch"></i></div>
-            </div>
-            <div class="col-4">
-                <div data-btn-type="playstation" data-btn-smooth="fals"><i class="bi bi-playstation"></i>
+                <div class="row">
+                  <div class="col-3">
+                    <div data-btn-type="xbox" data-btn-smooth="fals"><i class="bi bi-xbox"></i></div>
+                  </div>
+                <div class="col-3">
+                  <div data-btn-type="nintendo" data-btn-smooth="fals"><i class="bi bi-nintendo-switch"></i></div>
                 </div>
-            </div>
-        </div>
+                <div class="col-3">
+                  <div data-btn-type="playstation" data-btn-smooth="fals"><i class="bi bi-playstation"></i>
+                </div>
+                </div>
+                  <div class="col-3">
+                    <div data-btn-type="steam" data-btn-smooth="fals"><i class="bi bi-steam"></i>
+                  </div>
+                  </div>
+                  </div>
     </center>
 </body>
 
