@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/style.css">
     <link rel="stylesheet" href="https://wither19.github.io/demoknightcss/docs-style.css">
     <style>
@@ -40,7 +39,7 @@
     <float>
         <h1>3D Buttons</h1>
     </float>
-    <p style="max-width: 80%; margin: 10px auto 10px auto;">The attribute <b>"data-btn-type"</b> can be used with divs to get this premade 3D-looking button partially inspired by Gimkit's GUI. <br><b>"data-btn-fade"</b> sets a color transition on clicking the button. <br><b>"data-btn-smooth"</b> is a boolean value for enabling/disabling smooth transitions (It is true by default). <br><b>"data-btn-rounded"</b> is another boolean value (again, true by default) that defines border radius in the buttons.<br><br>You may adjust the width of the buttons as necessary.<br><br>Below is a list of colors and options available for the 3D buttons.</p>
+    <p style="max-width: 80%; margin: 10px auto 10px auto;">The attribute <b>"data-btn-type"</b> can be used with divs to get this premade 3D-looking button partially inspired by Gimkit's GUI. <br><br> It can define specific colors, as well as game platforms. When set to "<b>xbox</b>", "<b>nintendo</b>", "<b>playstation</b>", or "<b>steam</b>", It will add that platform's logo as a ::before.<br><br><b>"data-btn-fade"</b> sets a color transition on clicking the button. <br><br><b>"data-btn-smooth"</b> is a boolean value for enabling/disabling smooth transitions (It is true by default). <br><br><b>"data-btn-rounded"</b> is another boolean value (again, true by default) that defines border radius in the buttons.<br><br>You may adjust the width of the buttons as necessary.<br><br>Below is a list of colors and options available for the 3D buttons.</p>
     <br>
     <float>
         <h1>3D Button Syntax</h1>
@@ -102,10 +101,11 @@
             </tr>
         </tbody></table>
         <div class="row">
-      <div class="col-3"><div data-btn-type="xbox" data-btn-smooth="true" style="font-size: 6rem; width: 90%;"><i class="bi bi-xbox"></i></div></div>
-  <div class="col-3"><div data-btn-type="nintendo" data-btn-smooth="true" style="font-size: 6rem; width: 90%;"><i class="bi bi-nintendo-switch"></i></div></div>
-<div class="col-3"><div data-btn-type="playstation" data-btn-smooth="true" style="font-size: 6rem; width: 90%"><i class="bi bi-playstation"></i></div></div>
-<div class="col-3"><div data-btn-type="steam" data-btn-smooth="true" style="font-size: 6rem; width: 90%"><i class="bi bi-steam"></i></div></div>
+      <div class="col-3"><div data-btn-type="xbox" data-btn-smooth="true" style="font-size: 6rem; width: 90%;"></div></div>
+  <div class="col-3"><div data-btn-type="nintendo" data-btn-smooth="true" style="font-size: 6rem; width: 90%;"></div></div>
+<div class="col-3"><div data-btn-type="playstation" data-btn-smooth="true" style="font-size: 6rem; width: 90%">
+</div></div>
+<div class="col-3"><div data-btn-type="steam" data-btn-smooth="true" style="font-size: 6rem; width: 90%"></div></div>
         </div>
     </center>
 
