@@ -18,7 +18,11 @@
       <a class="nav-link" href="https://wither19.github.io/landing/">Landing Page</a>
     </li>
   </ul>
-</nav>  <p>This element is inline and makes text inside of it lime-colored and underlined. It inverts colors on hover. <br><br>You should use this when you have a word or term you need emphasized</p><br>
+</nav>  
+  <button type="button" class="btn btn-primary" style="margin: 0px 5%; font-size: 1.3rem" onclick="document.getElementById('body').setAttribute('data-bs-theme', 'light'); document.getElementById('nav').classList.replace('navbar-dark', 'navbar-light'); document.getElementById('nav').classList.replace('bg-dark', 'bg-light');"><i class="bi bi-sun-fill" style="color: yellow;"></i> Light Mode</button>
+    <button type="button" class="btn btn-primary float-end" style="margin: 0px 5%; font-size: 1.3rem;" onclick="document.getElementById('body').setAttribute('data-bs-theme', 'dark'); document.getElementById('nav').classList.replace('navbar-light', 'navbar-dark'); document.getElementById('nav').classList.replace('bg-light', 'bg-dark');"><i class="bi bi-moon-fill" style="color: lightgray;"></i> Dark Mode</button>
+    <float><h1>Vocabulary Tag &ltvocab&gt</h1></float>  
+  <br><br><br><p>This element is inline and makes text inside of it lime-colored and underlined. It inverts colors on hover. <br><br>You should use this when you have a word or term you need emphasized</p><br>
   <float><h2>Usage</h2></float>
   <pre class="line-numbers"><code>Trust me, this is an important word. Are you ready? Here we go... &lt;vocab&gt;Tapioca&lt;/vocab&gt;</code></pre><br>
   <float><h2>Result</h2></float>
