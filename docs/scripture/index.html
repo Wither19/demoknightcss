@@ -22,6 +22,9 @@
     </li>
   </ul>
 </nav>
+  <button type="button" class="btn btn-primary" style="margin: 0px 5%; font-size: 1.3rem" onclick="document.getElementById('body').setAttribute('data-bs-theme', 'light'); document.getElementById('nav').classList.replace('navbar-dark', 'navbar-light'); document.getElementById('nav').classList.replace('bg-dark', 'bg-light');"><i class="bi bi-sun-fill" style="color: yellow;"></i> Light Mode</button>
+    <button type="button" class="btn btn-primary float-end" style="margin: 0px 5%; font-size: 1.3rem;" onclick="document.getElementById('body').setAttribute('data-bs-theme', 'dark'); document.getElementById('nav').classList.replace('navbar-light', 'navbar-dark'); document.getElementById('nav').classList.replace('bg-light', 'bg-dark');"><i class="bi bi-moon-fill" style="color: lightgray;"></i> Dark Mode</button>
+    <br><br><br>
   <p>Used to cite from the Bible. Changes the contents inside to PT Serif and centers it (As a recommendation, use superscript for the numbers of the verses)<br><br>Use &ltverse&gt for dictating where the verse is found in the Bible, nested in &ltscripture&gt</p><br>
   <float><h2>Usage</h2></float>
   <pre class="line-numbers"><code>&ltscripture&gt&ltsup&gt8&lt/sup&gtSee to it that no one takes you captive through hollow<br> and deceptive philosophy, which depends on human tradition and the elemental <br>spiritual forces of this world rather than on Christ.
