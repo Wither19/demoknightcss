@@ -19,6 +19,9 @@
     </li>
   </ul>
 </nav>
+  <button type="button" class="btn btn-primary" style="margin: 0px 5%; font-size: 1.3rem" onclick="document.getElementById('body').setAttribute('data-bs-theme', 'light'); document.getElementById('nav').classList.replace('navbar-dark', 'navbar-light'); document.getElementById('nav').classList.replace('bg-dark', 'bg-light');"><i class="bi bi-sun-fill" style="color: yellow;"></i> Light Mode</button>
+    <button type="button" class="btn btn-primary float-end" style="margin: 0px 5%; font-size: 1.3rem;" onclick="document.getElementById('body').setAttribute('data-bs-theme', 'dark'); document.getElementById('nav').classList.replace('navbar-light', 'navbar-dark'); document.getElementById('nav').classList.replace('bg-light', 'bg-dark');"><i class="bi bi-moon-fill" style="color: lightgray;"></i> Dark Mode</button>
+    <br><br><br>
   <float><h1>The Floating Text Tag &lt;float&gt;</h1></float>
   <p>This element gives any content nested in it a floating animation. This is a block element (Use this element very sparingly, as excessive amounts lag your computer a ton)</p><br>
   <float><h2>Usage</h2></float>
