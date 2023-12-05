@@ -81,3 +81,15 @@
  li.nav-item {
      padding: 0px 260px;
 }
+body {
+          transition: 1s;
+        }
+        #nav {
+          transition: 1s;
+        }
+        #nav.navbar-dark ul li a{
+          color: lightblue;
+        }
+        #nav.navbar-dark ul li a:hover {
+          color: white;
+        }
