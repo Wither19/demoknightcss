@@ -401,9 +401,12 @@ Custom BS5 themes
     color-scheme: red;
     --bs-body-color: #f5f5dc;
     --bs-body-bg: #a45a52;
+    --bs-emphasis-color-rgb: rgb(135 72 65)
   }
 
   body[data-bs-theme="blu"] *, body[data-bs-theme="blu"] {
+    color-scheme: blu;
     --bs-body-color: #f6eabe;
     --bs-body-bg: #367588;
+    --bs-emphasis-color-rgb: rgb(41 90 105);
   }
