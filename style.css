@@ -438,4 +438,15 @@ Custom BS5 themes
     --bs-btn-disabled-bg: #367588;
     --bs-btn-disabled-border-color: #367588;
 }
-  }
+nav.bg-red {
+  background-color: #8f4c45;
+}
+nav.navbar-red {
+  color: #f5f5dc;
+}
+nav.bg-blu {
+  background-color: #316a7b;
+}
+nav.navbar-blu {
+  color: #f6eabe;
+}
