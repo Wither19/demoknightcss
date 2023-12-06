@@ -396,14 +396,14 @@ url("./fonts/bootstrap-icons.woff?7141511ac37f13e1a387fb9fc6646256") format("wof
 /* 
 Custom BS5 themes
 */
-  body[data-bs-theme="red-tf2"] *, body[data-bs-theme="red-tf2"] {
+  body[data-bs-theme="red"] *, body[data-bs-theme="red"] {
     
-    color-scheme: red-tf2;
+    color-scheme: red;
     --bs-body-color: #f5f5dc;
     --bs-body-bg: #a45a52;
   }
 
-  body[data-bs-theme="blu-tf2"] *, body[data-bs-theme="blu-tf2"] {
+  body[data-bs-theme="blu"] *, body[data-bs-theme="blu"] {
     --bs-body-color: #f6eabe;
     --bs-body-bg: #367588;
   }
