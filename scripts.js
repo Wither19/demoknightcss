@@ -10,23 +10,5 @@ function copyStyles() {
 function copyScripts() {
             navigator.clipboard.writeText(&ltscript src="https://wither19.github.io/demoknightcss/style.css"&gt&lt/script&gt);
         }
-document.getElementById('copy-css').addEventListener("click", copyStyles);
-document.getElementById('copy-js').addEventListener("click", copyScripts);
-const toastTriggerStyles = document.getElementById('liveToastBtnCss')
-const toastStyles = document.getElementById('liveToastCss')
-const toastTriggerScripts = document.getElementById('liveToastBtnJs')
-const toastScripts = document.getElementById('liveToastJs')
-
-if (toastTriggerStyles) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTriggerStyles.addEventListener('click', () => {
-    toastBootstrap.show()
-  })
-}
-
-if (toastTriggerScripts) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTriggerScripts.addEventListener('click', () => {
-    toastBootstrap.show()
-  })
-}
+document.getElementById('btn-css').addEventListener("click", copyStyles);
+document.getElementById('btn-js').addEventListener("click", copyScripts);
