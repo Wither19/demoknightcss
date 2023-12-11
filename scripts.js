@@ -17,9 +17,16 @@ const toastStyles = document.getElementById('liveToastCss')
 const toastTriggerScripts = document.getElementById('liveToastBtnJs')
 const toastScripts = document.getElementById('liveToastJs')
 
-if (toastTrigger) {
+if (toastTriggerStyles) {
   const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTrigger.addEventListener('click', () => {
+  toastTriggerStyles.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+
+if (toastTriggerScripts) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTriggerScripts.addEventListener('click', () => {
     toastBootstrap.show()
   })
 }
