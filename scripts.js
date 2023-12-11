@@ -12,3 +12,14 @@ function copyScripts() {
         }
 document.getElementById('copy-css').addEventListener("click", copyStyles);
 document.getElementById('copy-js').addEventListener("click", copyScripts);
+const toastTriggerStyles = document.getElementById('liveToastBtnCss')
+const toastStyles = document.getElementById('liveToastCss')
+const toastTriggerScripts = document.getElementById('liveToastBtnJs')
+const toastScripts = document.getElementById('liveToastJs')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
