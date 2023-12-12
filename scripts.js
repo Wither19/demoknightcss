@@ -1,3 +1,4 @@
+window.addEventListener("load", resized);
 window.addEventListener("resize", resized);
 
 function resized() {
