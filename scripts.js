@@ -2,6 +2,6 @@ window.addEventListener("load", resized);
 window.addEventListener("resize", resized);
 
 function resized() {
-  document.getElementById('w').innerHTML = window.innerWidth;
-  document.getElementById('h').innerHTML = window.innerHeight;
+  document.getElementsByClassName('width').innerHTML = window.innerWidth;
+  document.getElementsByClassName('height').innerHTML = window.innerHeight;
 }
